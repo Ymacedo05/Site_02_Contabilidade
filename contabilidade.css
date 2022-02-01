@@ -1,0 +1,374 @@
+*{
+    padding: 0px;     
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --corEscura:#232633;
+    --corEscura2: #2C333E;
+    --corCinza:#D3CDC6;
+    --corDestaque:#ece2acb7;
+}
+/*========= Container========================*/
+div#container{
+    min-width: 1200px;
+    margin: auto;
+}
+
+/*========= Header ínicio ==================*/
+header{
+    display: flex;
+    justify-content: space-between;
+    background: var(--corEscura);
+    color: white;
+}
+
+header .caixa{
+    width: 33%;
+    padding: 20px 0 ;
+
+    display: flex;
+    justify-content: center;
+}
+
+header #caixa02{
+    background: var(--corEscura2);
+}
+header .caixa img{
+    padding-top: 5px;
+    margin-right: 12px;
+    padding:0;
+}
+
+header .caixa h2{
+    font-size: 1.2em;
+}
+header .caixa p{
+    font-size: 0.9em;
+}
+header .caixa input{
+    font-size: 1.1em;
+    width: 160px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: white;
+    outline: none;
+}
+/*========= Header Fim ==================*/
+/*========= Nav ínicio===================*/
+
+nav{
+    border: 1px dashed black;
+    padding: 10px 80px;
+    display: flex;
+    
+    
+    
+}
+/*----sq---*/
+.logo{
+    height: 115px;
+    width: 30%;
+    
+}
+ .logo h2{
+    font-size: 5em;
+    text-decoration: underline;
+    line-height: 90px;
+}
+
+ .logo span{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+}
+
+/*----dr---*/
+nav #nav_dir{
+    width: 70%;   
+    
+}
+nav #nav_dir ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: right;
+    
+}
+nav #nav_dir a{
+    display: block;
+    padding: 10px 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--corEscura);
+    
+}
+nav #nav_dir a.a:hover{
+
+    border-top: 0.5px solid var(--corEscura);
+    border-bottom: 0.5px solid var(--corEscura);
+    
+}
+
+
+nav #nav_dir ul input {
+    padding: 10px 14px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background-color: var(--corEscura);
+    color: white;
+    font-weight: bold;
+}
+
+/*=========== Nav Fim ========================*/
+
+
+
+/*============== Ínicio Main =================*/
+
+/*-------- main p1 -----*/
+
+div#main_p1{
+    background: var(--corDestaque) url("imagens/background_03.jpg");
+    background-size: cover;
+    padding: 100px 800px 300px 100px;
+    color: var(--corEscura) ;
+    height: 600px;
+    box-sizing: border-box;
+        
+}
+
+div#main_p1 h1{
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: var(--corEscura);
+}
+
+div#main_p1 p{
+    font-size: 1.1em;
+    text-align: justify;
+    margin-bottom: 30px;
+    color: var(--corEscura);
+}
+
+div#main_p1 a{
+    background-color: var(--corEscura);
+    color: white;
+    padding: 10px;
+}
+
+/*-------- main p2 -----*/
+
+
+div#main_p2{
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    margin-bottom: 100px;
+    
+}
+
+div#main_p2 .p2s{
+    background-color: var(--corEscura);
+    color: white;
+    width: 350px;
+    height: 280px;
+    box-sizing: border-box;
+    margin : 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+div#main_p2 .p2s H2{
+    font-size: 1.2em;
+    padding-top: 70px;
+    padding-bottom: 16px;
+}
+
+div#main_p2 .p2s P{
+
+}
+
+/*-------- main p3 -----*/
+
+div#main_p3{
+    margin-bottom: 100px;
+}
+
+
+
+div#main_p3 #p3_p1{
+
+ 
+    padding: 60PX;
+    text-align: center;
+}
+div#main_p3 #p3_p1 h2{
+    font-size: 2.3em;
+    color: var(--corEscura);
+}
+div#main_p3 #p3_p1 p{
+    font-size: 1.2em;
+    color: rgb(167, 162, 162);
+}
+
+
+div#main_p3 #p3_p2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+div#main_p3 #p3_p2 .cont_p3s{
+    margin: 15px;
+}
+
+
+div#main_p3 .p3s{
+    width: 350px;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+    
+    
+}
+div#main_p3 .p3s img{
+    float: left;
+    background-color: var(--corDestaque);
+    margin-right: 13px;
+    margin-bottom: 60px;
+    margin-top: 5px;
+    padding: 5px;
+}
+div#main_p3 .p3s h3{
+    margin-bottom: 7px;
+    color: var(--corEscura);
+}
+div#main_p3 .p3s p{
+    margin-bottom: 7px;
+}
+
+div#main_p3 .p3s a{
+    color: var(--corEscura2);
+}
+
+/*============== Ínicio P4 ================*/
+
+div#main_p4{
+    background-color: var(--corEscura);
+    color: white;
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+/*-------p1---------*/
+div#main_p4 #p4_p1{
+
+    box-sizing: border-box;
+    width: 40%;
+    height: 300px;
+    padding-left: 12px;
+    padding-right: 20px;
+    float: right;
+}
+div#main_p4 #p4_p1 h2{
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+div#main_p4 #p4_p1 p{
+    margin-bottom: 30px;
+}
+
+
+/*-------p2---------*/
+
+div#main_p4 #p4_p2{
+    box-sizing: border-box;
+    width: 60%;
+    float: left;
+}
+
+div#main_p4 #p4_p2 div{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+div#main_p4 #p4_p2 input{
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border:0;
+    border-bottom: 1px solid gray;
+    font-size: 1.2em;
+
+}
+
+div#main_p4 #p4_p2 label{
+    display: block;
+}
+
+div#main_p4 #p4_p2 #conjunto{
+    display: flex;
+    
+}
+div#main_p4 #p4_p2 #conjunto input{
+    width: 270px;
+}
+div#main_p4 #p4_p2 #ipt_nome{
+    width: 580px;
+}
+
+div#main_p4 #p4_p2 textarea{
+    border: 0px;
+    outline: none;
+    width: 600px;
+    height: 100px;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+}
+div#main_p4 #p4_p2 #btn{
+    padding: 12px;
+    width: 110px;
+    border-radius: 30px;
+    background-color: lightgray;
+}
+
+/*================== footer ==================*/
+
+footer{
+    background-color: var(--corDestaque);
+    padding: 40px;
+    min-height: 150px;
+    display: flex;
+}
+
+footer #r,#l{
+    width: 220px;
+}
+
+
+footer #r{
+    width: 350px;
+    box-sizing: border-box;
+    padding-left: 120px;
+    
+    
+}
+
+footer #l{
+    width: 100%;
+    padding-left: 80px;
+}
+footer #l h3{
+    padding: 10px;
+}
+footer #l p{
+    padding: 10px;
+}
+
