@@ -3,9 +3,11 @@
     margin: 0px;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 body{
-    font-size: 13px;
+    font-size: 16px;
+    overflow-x: hidden;
 }
 
 :root{
@@ -21,11 +23,14 @@ div#container{
 }
 
 /*========= Header ínicio ==================*/
-header{
+
+
+header #p1{
     display: flex;
     justify-content: space-between;
     background: var(--corEscura);
     color: white;
+    width: 100vw;
 }
 
 header .caixa{
@@ -63,17 +68,22 @@ header .caixa input{
 /*========= Nav ínicio===================*/
 
 nav{
-    border: 1px dashed black;
-    padding: 10px 80px;
-    display: flex;
-    
-    
-    
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+    position: relative;
+    background-color: aquamarine;
+    width: 100vw;
+    padding: 0 30px;
+    height: 17vh;
+
 }
+
 /*----sq---*/
 .logo{
     height: 115px;
     width: 30%;
+    margin-left: 20px;
     
 }
  .logo h2{
@@ -89,36 +99,64 @@ nav{
     
 }
 
-/*----dr---*/
-nav #nav_dir{
-    width: 70%;   
-    
+#check{
+    display: none;
 }
-nav #nav_dir ul{
+
+#btn-c{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50px;
+    height: 50px;
+}
+
+#btn-c div{
+    background-color: var(--corEscura);
+    height: 6px;
+    transition: 0.7s;
+}
+
+/*----dr---*/
+nav ul{
     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: right;
-    
+    justify-content: center;
 }
-nav #nav_dir a{
+nav li{
+    margin: 5px;
+
+}
+nav a{
     display: block;
-    padding: 10px 12px;
+    height: 35px;
     font-size: 1.1em;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--corEscura);
+    line-height: 35px;
+    padding: 3px 5px;
     
 }
-nav #nav_dir a.a:hover{
+nav a.a:hover{
 
     border-top: 0.5px solid var(--corEscura);
     border-bottom: 0.5px solid var(--corEscura);
     
 }
 
+#home nav a.home, 
+#sobre nav a.sobre, 
+#servicos nav a.servicos,
+#trabalhe nav a.trabalhe,
+#contato nav a.contato{
+    background: linear-gradient(45deg, var(--corEscura), transparent);
+    color: white;
+}
 
-nav #nav_dir ul input {
+
+nav ul input {
     padding: 10px 14px;
     font-size: 0.9em;
     text-transform: uppercase;
@@ -139,41 +177,53 @@ nav #nav_dir ul input {
 div#main_p1{
     background: var(--corDestaque) url("imagens/background_03.jpg");
     background-size: cover;
-    padding: 100px 800px 300px 100px;
+    width: 100vw;
     color: var(--corEscura) ;
     height: 600px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 6%;
+    padding-top: 10%;
         
 }
 
 div#main_p1 h1{
     font-size: 2.5em;
-    margin-bottom: 15px;
-    color: var(--corEscura);
+    margin-bottom: 20px;
+    color: rgb(214, 220, 225);
+    width: 60vw;
 }
 
 div#main_p1 p{
     font-size: 1.1em;
     text-align: justify;
-    margin-bottom: 30px;
-    color: var(--corEscura);
+    margin-bottom: 40px;
+    color: rgb(195, 200, 205);
+    width: 60vw;
 }
 
 div#main_p1 a{
+    display: block;
     background-color: var(--corEscura);
     color: white;
     padding: 10px;
+    width: 170px;
+    height: 43px;
+    text-indent: 35px;
 }
 
 /*-------- main p2 -----*/
 
 
 div#main_p2{
+
     display: flex;
     justify-content: center;
-    margin-top: -70px;
-    margin-bottom: 100px;
-    
+    flex-wrap: wrap;
+    width: 100vw;
+    margin-top: -80px;
 }
 
 div#main_p2 .p2s{
@@ -202,14 +252,13 @@ div#main_p2 .p2s P{
 
 div#main_p3{
     margin-bottom: 100px;
+    width: 100vw;
 }
 
 
 
 div#main_p3 #p3_p1{
-
- 
-    padding: 60PX;
+    padding: 60px;
     text-align: center;
 }
 div#main_p3 #p3_p1 h2{
@@ -224,12 +273,8 @@ div#main_p3 #p3_p1 p{
 
 div#main_p3 #p3_p2{
     display: flex;
-    justify-content: center;
-    
-}
-
-div#main_p3 #p3_p2 .cont_p3s{
-    margin: 15px;
+    flex-wrap: wrap;
+    justify-content: center;   
 }
 
 
@@ -237,7 +282,8 @@ div#main_p3 .p3s{
     width: 350px;
     box-sizing: border-box;
     padding-bottom: 10px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+    margin-right: 25px;
     
     
 }
@@ -267,7 +313,9 @@ div#main_p4{
     background-color: var(--corEscura);
     color: white;
     box-sizing: border-box;
-    padding: 100px;
+    padding: 5%;
+    width: 100vw;
+    display: flex;
 }
 
 /*-------p1---------*/
@@ -275,10 +323,11 @@ div#main_p4 #p4_p1{
 
     box-sizing: border-box;
     width: 40%;
-    height: 300px;
-    padding-left: 12px;
-    padding-right: 20px;
-    float: right;
+    min-width: 250px;
+    min-height: 300px;
+    margin-left: 5%;
+    order: 2;
+
 }
 div#main_p4 #p4_p1 h2{
     font-size: 1.8em;
@@ -294,7 +343,8 @@ div#main_p4 #p4_p1 p{
 div#main_p4 #p4_p2{
     box-sizing: border-box;
     width: 60%;
-    float: left;
+    min-width: 300px;
+    order: 1;
 }
 
 div#main_p4 #p4_p2 div{
@@ -318,19 +368,19 @@ div#main_p4 #p4_p2 label{
 
 div#main_p4 #p4_p2 #conjunto{
     display: flex;
-    
+    width: 100%;
 }
 div#main_p4 #p4_p2 #conjunto input{
-    width: 270px;
+    width: 98%;
 }
 div#main_p4 #p4_p2 #ipt_nome{
-    width: 580px;
+    width: 100%;
 }
 
 div#main_p4 #p4_p2 textarea{
     border: 0px;
     outline: none;
-    width: 600px;
+    width: 100%;
     height: 100px;
     background-color: transparent;
     border-bottom: 1px solid gray;
@@ -346,27 +396,32 @@ div#main_p4 #p4_p2 #btn{
 
 footer{
     background-color: var(--corDestaque);
-    padding: 40px;
     min-height: 150px;
     display: flex;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    justify-content: space-around;
 }
 
 footer #r,#l{
     width: 220px;
+
 }
 
 
 footer #r{
-    width: 350px;
+    min-width: 200px;
     box-sizing: border-box;
-    padding-left: 120px;
-    
+    display: flex;
+    align-items: center;
     
 }
 
 footer #l{
     width: 100%;
-    padding-left: 80px;
+    padding-right:5%;
+    text-align: justify;
 }
 footer #l h3{
     padding: 10px;
@@ -375,3 +430,101 @@ footer #l p{
     padding: 10px;
 }
 
+.logo-f{
+    height: 115px;
+    width: 30%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+ .logo-f h2{
+    font-size: 4em;
+    text-decoration: underline;
+    line-height: 70px;
+}
+
+ .logo-f span{
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+}
+
+
+
+@media (max-width:950px){
+
+    body, html{
+        /* overflow-x: hidden; */
+    }
+    
+
+    ul{
+        position: absolute;
+        right: 0;
+        top: 17vh;
+        background-color: var(--corEscura2);
+        width: 50vw;
+        height: 85vh !important;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s;
+        justify-content: center !important;
+    }
+    ul li a {
+        color: white;
+        border-bottom: 1px solid aquamarine;
+    }
+
+    li a:hover{
+        color: aquamarine;
+    }
+
+    #check:checked ~ ul{
+        transform: translateX(0%);
+    }
+    #check:checked ~ label .l1{
+        transform: rotate(45deg) translate(20px,16px);
+    }
+    #check:checked ~ label .l2{
+        opacity: 0;
+    }
+    #check:checked ~ label .l3{
+        transform: rotate(-45deg) translate(7px,-5px);
+    }
+    
+    #btn-c{
+        display: flex;
+    }
+
+    /**/
+
+    #p1{
+        display: none !important;
+    }
+
+    #main_p4{
+        flex-wrap: wrap ;
+        justify-content: center;
+    }
+    #main_p4 #p4_p2{
+        width: 90% !important;
+        order: 2;
+    }
+    #main_p4 #p4_p1{
+        width: 90% !important;
+        order: 1 !important;
+        margin: 0 !important;
+    }
+    #conjunto{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #conjunto input{
+        min-width: 120px !important;
+
+    }
+}

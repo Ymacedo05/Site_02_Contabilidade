@@ -8,83 +8,92 @@
 
     <link rel="stylesheet" href="contabilidade.css">
 </head>
-<body>
+<body id="home">
     
     <div id="container">
 
         <header>
-            <div class="caixa">
-                <div class="esq">
-                    <img src="imagens/telefone.png" alt="" width="35">
+            <div id="p1">
+                <div class="caixa">
+                    <div class="esq">
+                        <img src="imagens/telefone.png" alt="" width="35">
+                    </div>
+                    <div class="dir">
+                        <h2>Fale Conosco</h2>
+                        <p>
+                            (11) 99417-6292
+                        </p>
+                    </div>
                 </div>
-                <div class="dir">
-                    <h2>Fale Conosco</h2>
-                    <p>
-                        (11) 99417-6292
-                    </p>
+                <div class="caixa" id="caixa02">
+                    <div class="esq">
+                        <img src="imagens/calendario.png" alt="" width="35">
+                    </div>
+                    <div class="dir">
+                        <h2>Atendimento</h2>
+                        <p>
+                            Seg a sex dás 08h ás 17h
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-
-            <div class="caixa" id="caixa02">
-                <div class="esq">
-                    <img src="imagens/calendario.png" alt="" width="35">
-                </div>
-                <div class="dir">
-                    <h2>Atendimento</h2>
-                    <p>
-                        Seg a sex dás 08h ás 17h
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="caixa">
-                <div class="esq">
-                    <img src="imagens/user.png" alt="" width="35">
-                </div>
-                <div class="dir">
-                    <input type="button" value="Área do cliente">
+                <div class="caixa">
+                    <div class="esq">
+                        <img src="imagens/user.png" alt="" width="35">
+                    </div>
+                    <div class="dir">
+                        <input type="button" value="Área do cliente">
+                    </div>
                 </div>
             </div>
-        </header>
-        <nav>
 
-            <div class="logo">
-                <h2>YM</h2>
-                <span>contabilidade</span>
-            </div>
+<!-- ---------------  INICIO NAV ------------>
+            <nav>
 
+                <div class="logo">
+                    <h2>YM</h2>
+                    <span>contabilidade</span>
+                </div>
                 
-            <div id="nav_dir">
+                <input type="checkbox"  id="check">
+                <label for="check">
+
+                    <div id="btn-c">
+                        <div class="l1"></div>
+                        <div class="l2"></div>
+                        <div class="l3"></div>
+                      
+                    </div>
+
+                </label>
+                    
                 <ul>
                     <li>
-                        <a href="" class="a">
-                            inicio
+                        <a href="" class="a home" >
+                            Ínicio
                         </a>
                     </li>
 
                     <li>
-                        <a href="" class="a">
+                        <a href="" class="a sobre" >
                             Sobre
                         </a>
                     </li>
 
                     <li>
-                        <a href="" class="a"> 
-                            serviços
+                        <a href="" class="a servicos"> 
+                            Serviços
                         </a>
                     </li>
 
                     <li>
-                        <a href="" class="a">
-                            trabalhe conosco
+                        <a href="" class="a trabalhe">
+                            Trabalhe Conosco
                         </a>
                     </li>
 
                     <li>
-                        <a href="" class="a">
-                            contato
+                        <a href="" class="a contato">
+                            Contato
                         </a>
                     </li>
 
@@ -94,10 +103,12 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+    
+            </nav>
+        </header>
 
-        </nav>
-
+       
+<!---------------- ÍNICIO MAIN ----------------->
         <main>
             <div id="main_p1">
                 <h1> Focamos em oferecer profissionalismo e competência!</h1>
@@ -111,7 +122,7 @@
             </div> <!--Fim P1-->
 
 
-<!-----------------Ínicio P2----------------->
+<!-----------------Ínicio MAIN  P2----------------->
             <div id="main_p2">
 
                 <div class="p2s">
@@ -157,7 +168,6 @@
 
                 <div id="p3_p2">
 
-                    <div class="cont_p3s">
                         <div class="p3s">
                             <img src="imagens/financas_1.ico" alt="" width="50px">
                             <h3>
@@ -178,9 +188,7 @@
                             </p>
                             <a href="">Saiba mais</a>
                         </div>
-                    </div>
 
-                    <div class="cont_p3s">
                         <div class="p3s">
                             <img src="imagens/financas_1.ico" alt="" width="50px">
                             <h3>
@@ -201,9 +209,7 @@
                             </p>
                             <a href="">Saiba mais</a>
                         </div>
-                    </div>
 
-                    <div class="cont_p3s">
                         <div class="p3s">
                             <img src="imagens/financas_1.ico" alt="" width="50px">
                             <h3>
@@ -224,7 +230,6 @@
                             </p>
                             <a href="">Saiba mais</a>
                         </div>
-                    </div> <!--fim Cont_P3S-->
                 </div>
             </div> <!-- Fim P3-->
 
@@ -292,7 +297,7 @@
         <footer>
 
             <div id="r">
-                <div class="logo">
+                <div class=" logo-f">
                     <h2>YM</h2>
                     <span>contabilidade</span>
                 </div>
