@@ -178,13 +178,14 @@ div#main_p1{
     background-size: cover;
     width: 100vw;
     color: var(--corEscura) ;
-    height: 600px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 6%;
     padding-top: 10%;
+    padding-bottom: 5%;
+    min-height: 600px;
         
 }
 
@@ -344,6 +345,7 @@ div#main_p4 #p4_p2{
     width: 60%;
     min-width: 300px;
     order: 1;
+    margin-top: 15%;
 }
 
 div#main_p4 #p4_p2 div{
@@ -458,6 +460,7 @@ footer #l p{
 
     body, html{
         /* overflow-x: hidden; */
+        font-size: 14px;
     }
     
 
@@ -497,12 +500,30 @@ footer #l p{
     
     #btn-c{
         display: flex;
+        width: 45px;
+        height: 45px;
+    }
+    .logo{
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo h2{
+        font-size: 3em;
+        line-height: 50px;
+    }
+    .logo span{
+        font-size: 0.8em;
     }
 
     /**/
 
     #p1{
         display: none !important;
+    }
+    #main_p2 {
+        margin-top: 20px !important;
     }
 
     #main_p4{
